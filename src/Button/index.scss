@@ -1,0 +1,23 @@
+// 也可写less等其他CSS预处理器
+.btn {
+  font-size: 14px;
+  height: 32px;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #333;
+
+  &-primary {
+    background-color: #1677ff;
+    color: #fff;
+    border-color: #1677ff;
+  }
+  &-disabled {
+    background-color: #f5f5f5;
+    color: #999;
+    border: 1px solid #999;
+    cursor: not-allowed;
+  }
+}
