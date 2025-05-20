@@ -1,3 +1,4 @@
+import cs from 'classnames';
 import React, { ReactNode, type FC } from 'react';
 import './index.scss';
 
@@ -23,14 +24,22 @@ const Button: FC<ButtonProps> = (props) => {
     style,
     onClick,
   } = props;
+
+  // 优化
+  // 使用classnames库优化 类名代码可读性
+  // 加前缀，防止类名冲突   su-btn  su-btn-primary
+  const libPrefix = 'su'; // 组件库前缀
+  const btnPrefix = libPrefix + '-btn'; // 再加组件类型前缀
+  const buttonClass = cs(
+    btnPrefix,
+    {
+      [`${btnPrefix}-primary`]: type === 'primary',
+      [`${btnPrefix}-disabled`]: disabled,
+    },
+    className,
+  );
   return (
-    <button
-      className={`btn ${type === 'primary' ? 'btn-primary' : ''}  
-      ${disabled ? 'btn-disabled' : ''} 
-      ${className}`}
-      style={style}
-      onClick={onClick}
-    >
+    <button className={buttonClass} style={style} onClick={onClick}>
       {icon}
       {text}
       {children}

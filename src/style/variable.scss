@@ -1,0 +1,19 @@
+$libPrefix: 'su';
+$btnPrefix: '#{$libPrefix}-btn';
+
+// 色系
+// primary
+$super-ui-primary-color: #1677ff;
+
+// white
+$super-ui-white-color: #fff;
+
+// black
+$super-ui-black-color: #333;
+
+// 按钮相关
+$super-ui-button-content-font-size: 14px;
+$super-ui-button-height: 32px;
+$super-ui-button-padding: 0 15px;
+$super-ui-button-bg-color-disabled: #f5f5f5;
+$super-ui-button-color-disabled: #999;
