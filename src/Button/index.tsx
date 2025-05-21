@@ -1,5 +1,12 @@
+/*
+ * @Author: yangshangchao
+ * @Date: 2025-05-20 11:31:30
+ * @LastEditors: yangshangchao
+ * @Description: 头部注释
+ */
 import cs from 'classnames';
-import React, { ReactNode, type FC } from 'react';
+import React, { ReactNode, useContext, type FC } from 'react';
+import { ConfigContext } from '../ConfigProvider';
 import './index.scss';
 
 interface ButtonProps {
@@ -24,11 +31,12 @@ const Button: FC<ButtonProps> = (props) => {
     style,
     onClick,
   } = props;
+  const { libPrefix } = useContext(ConfigContext);
 
   // 优化
   // 使用classnames库优化 类名代码可读性
   // 加前缀，防止类名冲突   su-btn  su-btn-primary
-  const libPrefix = 'su'; // 组件库前缀
+  // const libPrefix = 'su'; // 组件库前缀   -- 多个组件使用这个前缀，提取至ConfigProvider组件
   const btnPrefix = libPrefix + '-btn'; // 再加组件类型前缀
   const buttonClass = cs(
     btnPrefix,
