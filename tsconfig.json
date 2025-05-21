@@ -10,7 +10,8 @@
       "@@/*": [".dumi/tmp/*"],
       "Super-UI-dmui": ["src"],
       "Super-UI-dmui/*": ["src/*", "*"]
-    }
+    },
+    "types": ["jest"]
   },
-  "include": [".dumirc.ts", "src/**/*"]
+  "include": [".dumirc.ts", "src/**/*", "test/*"]
 }
