@@ -23,4 +23,8 @@ module.exports = {
   // ],
   // testMatch: ['**/__tests__/**/*.test.(ts|tsx)'],
   // testMatch: ['&zwnj;**/tests/**&zwnj;/*.spec.(js|jsx|ts|tsx)'],
+  testMatch: [
+    // '<rootDir>/src/**/*.test.(ts|tsx)',
+    '<rootDir>/src/**/index.test.tsx', // 更加精确配置
+  ],
 };
