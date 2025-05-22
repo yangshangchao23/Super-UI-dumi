@@ -4,7 +4,7 @@
  * @LastEditors: yangshangchao
  * @Description: 头部注释
  */
-import React, { createContext, type FC } from 'react';
+import { createContext, type FC } from 'react';
 
 interface ConfigContext {
   libPrefix: string;

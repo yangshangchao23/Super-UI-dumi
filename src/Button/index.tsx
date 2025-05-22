@@ -16,7 +16,7 @@ interface ButtonProps {
   text?: string;
   children?: ReactNode;
   className?: string;
-  style: object;
+  style?: object;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
@@ -47,7 +47,12 @@ const Button: FC<ButtonProps> = (props) => {
     className,
   );
   return (
-    <button className={buttonClass} style={style} onClick={onClick}>
+    <button
+      disabled={disabled}
+      className={buttonClass}
+      style={style}
+      onClick={onClick}
+    >
       {icon}
       {text}
       {children}
