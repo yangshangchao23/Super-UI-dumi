@@ -1,3 +1,12 @@
+---
+nav:
+  title: Components
+  path: /components
+group:
+  title: 基础组件
+  order: 1
+---
+
 # Button
 
 This is an example component.
