@@ -13,7 +13,7 @@ This is an example component.
 
 ```tsx
 import React from 'react';
-import { Button } from 'Super-UI-dmui';
+import { Button } from 'super-ui-dmui';
 
 const App: React.FC = () => <Button>普通按钮</Button>;
 
@@ -26,7 +26,7 @@ export default App;
 
 ```tsx
 import React from 'react';
-import { Button } from 'Super-UI-dmui';
+import { Button } from 'super-ui-dmui';
 
 const App: React.FC = () => <Button type="primary">主按钮</Button>;
 
@@ -39,7 +39,7 @@ export default App;
 
 ```tsx
 import React from 'react';
-import { Button } from 'Super-UI-dmui';
+import { Button } from 'super-ui-dmui';
 
 const App: React.FC = () => <Button disabled>禁用按钮</Button>;
 

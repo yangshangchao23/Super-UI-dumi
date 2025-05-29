@@ -12,7 +12,7 @@ group:
 This is an example component.
 
 ```jsx
-import { Foo } from 'Super-UI-dmui';
+import { Foo } from 'super-ui-dmui';
 
 export default () => <Foo title="Hello dumi!" />;
 ```
